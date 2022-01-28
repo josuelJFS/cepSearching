@@ -35,7 +35,8 @@ router.get("/seach", async (req, res) => {
     }
 });
 router.get("/createTable", async (req, res) => {
-    await querySync(
+ try {
+    const data = await querySync(
         `create table IF NOT EXISTS cepInfos (
             id int primary key auto_increment,
             cep int,
@@ -48,7 +49,10 @@ router.get("/createTable", async (req, res) => {
             siafi int,
             localidade varchar(250)
             )`)
-    
+        res.send(data)
+ } catch (error) {
+    res.send(error)
+ }
 });
 
 module.exports = router;
