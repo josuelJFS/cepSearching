@@ -41,6 +41,19 @@ localidade varchar(250)
 
 ```
 
+#### configure the .env variables
+
+```bash
+BD_HOST = localhost
+BD_USER = root
+BD_PASSWORD = root
+BD_PORT = 3306
+BD_DATABASE = cepDB
+TIMEZONE = utc
+CHARSET = utf8
+
+```
+
 #### now just start the server
 ```bash
 $ npm run dev
