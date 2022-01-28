@@ -1,0 +1,23 @@
+{
+  "dependencies": {
+    "axios": "^0.25.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mysql": "^2.18.1",
+    "yarn": "^1.22.10"
+  },
+  "name": "nodeteste",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {
+    "dotenv": "^8.6.0",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "author": "josuel fernandes silva",
+  "license": ".",
+  "description": ""
+}
